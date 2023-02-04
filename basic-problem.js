@@ -27,4 +27,24 @@ function gattrThenFive(numbers){
 }
 
 const count = gattrThenFive(arr)
-console.log(count)
+// console.log(count)
+
+
+// find lergest name and revers name 
+
+const nameOne = 'Sajid';
+const nameTwo = 'Nurnovi';
+
+function reversName(nameOne , nameTwo){
+    const nameOneLength = nameOne.length;
+    const nametwoLength = nameTwo.length;
+    if(nameOneLength > nametwoLength){
+       return nameOne.split("").reverse().join("")
+    }
+    else{
+        return nameTwo.split("").reverse().join("")
+    }
+}
+
+const revers = reversName(nameOne , nameTwo);
+console.log(revers)
